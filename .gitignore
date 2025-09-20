@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+
+# Local secrets / logs
+.env
+streamlit.log
