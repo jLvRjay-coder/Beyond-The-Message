@@ -1,0 +1,19 @@
+{
+  "site": "https://beyondthemessage.org",
+  "prepared_on": "2026-11-05",
+  "publishing_status": "Prepared source; not deployed to WordPress",
+  "pages": [
+    {
+      "page_id": 165,
+      "file": "pages/home.html",
+      "url": "https://beyondthemessage.org/",
+      "published_baseline_modified": "2026-10-12T22:31:04"
+    },
+    {
+      "page_id": 948,
+      "file": "pages/about.html",
+      "url": "https://beyondthemessage.org/about/",
+      "published_baseline_modified": "2026-10-12T21:52:17"
+    }
+  ]
+}
