@@ -1,0 +1,654 @@
+<!-- wp:html -->
+<style>
+/* Home: tighten horizontal padding */
+@media (max-width: 768px) {
+  body.home .wp-site-blocks,
+  body.home .entry-content,
+  body.home .wp-block-group {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .btm-container {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .btm-hero-wrap {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Home: reduce excess vertical padding */
+body.home .wp-site-blocks,
+body.home main,
+body.home .entry-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btm-hero-wrap {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+/* Hero */
+.home .wp-block-site-title,
+.home .wp-block-site-tagline {
+  display: none;
+}
+
+.btm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btm-hero-wrap {
+  margin: 0 0 1.75rem;
+}
+
+.btm-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 22px rgba(0,0,0,.25);
+  background: #1e3a8a;
+}
+
+.btm-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(6,20,46,.70),
+    rgba(6,20,46,.35)
+  );
+}
+
+.btm-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: contrast(1.05) saturate(1.05) brightness(.9);
+  pointer-events: none;
+}
+
+.btm-hero__inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 88px 18px 52px;
+  color: #f8fafc;
+}
+
+/* Explicit white heading overrides the theme's navy heading color */
+#btmHomeHero .btm-hero__title {
+  margin: 0 0 .5rem;
+  font-family: Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: clamp(32px,4.5vw,54px);
+  color: #f8fafc;
+}
+
+#btmHomeHero .btm-hero__title .gold {
+  color: #facc15;
+}
+
+.btm-hero__sub {
+  margin: 0 auto 1.3rem;
+  max-width: 44rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+  font-size: clamp(14px,1.6vw,18px);
+}
+
+.btm-hero__cta {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: .35rem;
+}
+
+.btm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  border-radius: 14px;
+  padding: .7rem 1.15rem;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  box-shadow: 0 2px 10px rgba(15,23,42,.35);
+  transition: transform .07s ease-out,
+              filter .12s ease-out,
+              box-shadow .12s ease-out;
+}
+
+.btm-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(.97);
+  box-shadow: 0 4px 14px rgba(15,23,42,.45);
+}
+
+.btm-btn__icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+}
+
+.btm-btn__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.btm-btn__label {
+  white-space: nowrap;
+}
+
+/* Journey Map */
+.btm-btn--map {
+  background: rgba(15,23,42,.85);
+  color: #e5e7eb;
+  border: 1px solid #facc15;
+}
+
+/* Study Hub */
+.btm-btn--study {
+  background: #facc15;
+  color: #1e3a8a;
+}
+
+/* Stories & Testimonies */
+.btm-btn--stories {
+  background: #ffffff;
+  color: #1e3a8a;
+  border: 1px solid rgba(250,204,21,.95);
+}
+
+/* Share */
+.btm-btn--share {
+  background: #2563eb;
+  color: #f9fafb;
+}
+
+/* About Us navigation in the upper-right corner */
+#btmHomeHero .btm-home-about {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  z-index: 3;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#btmHomeHero a.btm-home-about__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .45rem 1.05rem;
+  border: 1px solid rgba(250,204,21,.65);
+  border-radius: 10px;
+  background: rgba(15,23,42,.76);
+  color: #facc15;
+  font-family: Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size: .85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background .15s ease,color .15s ease;
+}
+
+#btmHomeHero a.btm-home-about__link:hover {
+  background: #facc15;
+  color: #1e3a8a;
+}
+
+#btmHomeHero a.btm-home-about__link:focus-visible {
+  outline: 3px solid #f8fafc;
+  outline-offset: 4px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .btm-hero {
+    min-height: 360px;
+  }
+
+  .btm-hero__inner {
+    padding: 88px 18px 36px;
+  }
+
+  .btm-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #btmHomeHero .btm-home-about {
+    top: 16px;
+    right: 16px;
+  }
+
+  #btmHomeHero a.btm-home-about__link {
+    padding: .45rem .9rem;
+    font-size: .82rem;
+  }
+}
+
+/* The Belief Files: part of the homepage layout. */
+#btmHomeHero .btm-btn--belief {background:#10283c;color:#faf8f3;border:1px solid #d4b67b;}
+#btm-home-belief {margin:0 auto 36px;width:calc(100% - 32px);max-width:1168px;padding:32px;background:#10283c;color:#faf8f3;border:1px solid #c5a66a;border-left:4px solid #c5a66a;border-radius:12px;box-sizing:border-box;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;}
+#btm-home-belief * {box-sizing:border-box;}
+#btm-home-belief .btm-belief-layout {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;}
+#btm-home-belief .btm-belief-kicker {display:block;color:#d4b67b;font-size:11px;font-weight:700;letter-spacing:.15em;line-height:1.6;text-transform:uppercase;margin:0 0 10px;}
+#btm-home-belief h2 {font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:400;line-height:1.15;letter-spacing:-.025em;color:#faf8f3;margin:0 0 14px;}
+#btm-home-belief p {font-size:15px;line-height:1.8;color:#d7e0e6;max-width:650px;margin:0;}
+#btm-home-belief a {display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:50px;padding:13px 20px;background:#faf8f3;color:#10283c;border:1px solid #faf8f3;border-radius:5px;font-size:14px;font-weight:650;line-height:1.5;text-decoration:none;white-space:nowrap;}
+#btm-home-belief a:hover {background:#e5d1a9;border-color:#e5d1a9;}
+#btm-home-belief a:focus-visible {outline:3px solid #d4b67b;outline-offset:5px;}
+@media(max-width:760px) {#btm-home-belief {padding:26px 23px;}#btm-home-belief .btm-belief-layout {grid-template-columns:1fr;gap:23px;}#btm-home-belief h2 {font-size:30px;}#btm-home-belief a {width:100%;white-space:normal;}}
+
+</style>
+
+<section class="btm-hero-wrap" id="btmHomeHero">
+  <div class="btm-container">
+    <div class="btm-hero">
+
+      <video
+        id="btmHeroVideo"
+        class="btm-hero__bg"
+        src="https://beyondthemessage.org/wp-content/uploads/2025/10/Herobannerloop.mp4"
+        autoplay
+        muted
+        playsinline
+        webkit-playsinline
+        loop
+        preload="auto"
+        data-no-lazy="1"
+        data-skip-lazy="1"
+        data-ignore-lazyload="1"
+        data-ignore-lazy="1">
+      </video>
+
+      <!-- About Us navigation -->
+      <nav class="btm-home-about" aria-label="About Beyond the Message">
+        <a class="btm-home-about__link"
+           href="https://beyondthemessage.org/about/">
+          About Us
+        </a>
+      </nav>
+
+      <div class="btm-hero__inner">
+
+        <h1 class="btm-hero__title">
+          Beyond the <span class="gold">Message</span>
+        </h1>
+
+        <p class="btm-hero__sub">
+          Guiding families to grow in faith, lead with courage, and live with purpose.
+        </p>
+
+        <div class="btm-hero__cta">
+
+          <!-- Journey Map -->
+          <a class="btm-btn btm-btn--map"
+             href="https://beyondthemessage.org/journey-map/">
+            <span class="btm-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 6.5 9 4l6 2.5 5-2.5v13L15 19l-6-2.5-5 2.5v-13Z"
+                  stroke="#facc15"
+                  stroke-width="1.6"
+                  stroke-linejoin="round">
+                </path>
+                <path
+                  d="M9 4v12.5M15 6.5v12.5"
+                  stroke="#facc15"
+                  stroke-width="1.6">
+                </path>
+              </svg>
+            </span>
+            <span class="btm-btn__label">Journey Map</span>
+          </a>
+
+          <!-- Study Hub -->
+          <a class="btm-btn btm-btn--study"
+             href="https://beyondthemessage.org/study-hub/">
+            <span class="btm-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3 5 5v6.5c0 3.9 2.7 7.4 7 9 4.3-1.6 7-5.1 7-9V5l-7-2Z"
+                  stroke="#1e3a8a"
+                  stroke-width="1.6"
+                  stroke-linejoin="round">
+                </path>
+                <path
+                  d="M9 9.5h6M9 12.5h4"
+                  stroke="#1e3a8a"
+                  stroke-width="1.6"
+                  stroke-linecap="round">
+                </path>
+              </svg>
+            </span>
+            <span class="btm-btn__label">Study Hub</span>
+          </a>
+
+          <!-- The Belief Files -->
+          <a class="btm-btn btm-btn--belief" href="https://beyondthemessage.org/the-belief-files/">
+            <span class="btm-btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h7l2 2h9v11H3V7Z"/><path d="M3 7V4h7l2 3M7 13h10M7 16h7"/></svg></span>
+            <span class="btm-btn__label">The Belief Files</span>
+          </a>
+
+          <!-- Stories & Testimonies -->
+          <a class="btm-btn btm-btn--stories"
+             href="https://beyondthemessage.org/blog/">
+            <span class="btm-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6.5 4.5h9A2.5 2.5 0 0 1 18 7v12.5a2 2 0 0 0-2-2H6.5A2.5 2.5 0 0 0 4 20V7a2.5 2.5 0 0 1 2.5-2.5Z"
+                  stroke="#1e3a8a"
+                  stroke-width="1.6"
+                  stroke-linejoin="round">
+                </path>
+                <path
+                  d="M6.8 8h8.2M6.8 11h8.2M6.8 14h6.2"
+                  stroke="#1e3a8a"
+                  stroke-width="1.6"
+                  stroke-linecap="round">
+                </path>
+              </svg>
+            </span>
+            <span class="btm-btn__label">Stories &amp; Testimonies</span>
+          </a>
+
+          <!-- Share with a Friend -->
+          <a
+            class="btm-btn btm-btn--share"
+            id="btmShareBtn"
+            href="mailto:?subject=Beyond%20the%20Message&amp;body=I%20thought%20you%27d%20like%20this%20site:%20https://beyondthemessage.org/">
+            <span class="btm-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 12 15 8M9 12l6 4"
+                  stroke="#e5f2ff"
+                  stroke-width="1.6"
+                  stroke-linecap="round">
+                </path>
+                <circle cx="6" cy="12" r="2.3" stroke="#e5f2ff" stroke-width="1.6"></circle>
+                <circle cx="18" cy="7" r="2.3" stroke="#e5f2ff" stroke-width="1.6"></circle>
+                <circle cx="18" cy="17" r="2.3" stroke="#e5f2ff" stroke-width="1.6"></circle>
+              </svg>
+            </span>
+            <span class="btm-btn__label">Share with a Friend</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="btm-home-belief" aria-labelledby="btm-home-belief-title">
+  <div class="btm-belief-layout">
+    <div>
+      <span class="btm-belief-kicker">Faith. History. Evidence.</span>
+      <h2 id="btm-home-belief-title">The Belief Files</h2>
+      <p>Explore religious claims through Scripture, history, and primary sources. Begin with the LDS comparison and our First Vision investigation.</p>
+    </div>
+    <a href="https://beyondthemessage.org/the-belief-files/">Explore The Belief Files <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<script>
+/* Autoplay helper for hero video */
+(function () {
+  var v = document.getElementById('btmHeroVideo');
+  if (!v) return;
+
+  function kick() {
+    v.muted = true;
+    v.play().catch(function () {
+      v.setAttribute('controls', '');
+    });
+  }
+
+  if (v.readyState >= 2) kick();
+  else v.addEventListener('loadeddata', kick, { once: true });
+
+  ['click','touchstart','scroll'].forEach(function (evt) {
+    window.addEventListener(evt, function once() {
+      kick();
+      window.removeEventListener(evt, once);
+    }, { passive: true });
+  });
+})();
+
+/* Smart share button */
+(function () {
+  var btn = document.getElementById('btmShareBtn');
+  if (!btn || !navigator.share) return;
+
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    navigator.share({
+      title: 'Beyond the Message — Home',
+      text: 'Check out this site that connects Scripture to daily life:',
+      url: 'https://beyondthemessage.org/'
+    }).catch(function () {});
+  });
+})();
+</script>
+
+
+
+<style>
+/* === BTM CTA + FOOTER v4.1 (Links fixed + Floating button safe space) === */
+
+/* Create space so fixed floating buttons (Angel) don't cover bottom content */
+:root { --btm-floating-safe: 86px; }
+body { padding-bottom: var(--btm-floating-safe); }
+
+/* CTA SECTION */
+.btm-cta-section {
+  background-color: #facc15;
+  padding: 1.75rem 1rem;
+  text-align: center;
+}
+
+.btm-cta-section h2 {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.btm-cta-section p {
+  margin-bottom: 0.9rem;
+  color: #1e3a8a;
+  font-size: .95rem;
+}
+
+/* CTA buttons */
+.btm-cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btm-cta-button {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(15,23,42,.3);
+}
+
+.btm-cta-button--secondary {
+  background-color: #ffffff;
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+}
+
+/* FOOTER */
+footer.btm-footer {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 2.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.btm-footer-column {
+  flex: 1 1 220px;
+}
+
+.btm-footer-column h3 {
+  color: #facc15;
+  font-size: .95rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.btm-footer-column p,
+.btm-footer-column ul li {
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.btm-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btm-footer-column ul li {
+  margin-bottom: 0.4rem;
+}
+
+.btm-footer-column a {
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+.btm-footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER BOTTOM */
+.btm-footer-bottom {
+  background-color: #334155;
+  color: #f8fafc;
+  text-align: center;
+  padding: 0.9rem;
+  font-size: 0.82rem;
+}
+
+.btm-footer-bottom a {
+  color: #facc15;
+  text-decoration: none;
+  margin: 0 0.35rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  :root { --btm-floating-safe: 98px; } /* a touch more on mobile */
+
+  .btm-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btm-cta-button {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  footer.btm-footer {
+    padding: 2rem 1rem 1.25rem;
+  }
+}
+</style>
+
+<!-- CTA Section -->
+<section class="btm-cta-section">
+  <h2>Ready to take the next step?</h2>
+  <p>Continue the journey beyond the message.</p>
+  <div class="btm-cta-buttons">
+    <a class="btm-cta-button" href="/study-hub/">Open the Study Hub</a>
+    <a class="btm-cta-button btm-cta-button--secondary" href="/blog/">
+      Stories &amp; Testimonies
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="btm-footer">
+  <div class="btm-footer-column">
+    <h3>Beyond the Message</h3>
+    <p>
+      Guiding families to grow in faith, lead with courage,
+      and live with purpose through Scripture and real stories.
+    </p>
+  </div>
+
+  <div class="btm-footer-column">
+    <h3>Explore</h3>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/study-hub/">Study Hub</a></li>
+      <li><a href="/blog/">Stories &amp; Testimonies</a></li>
+      <li><a href="https://beyondthemessage.org/the-belief-files/">The Belief Files</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/privacy-policy/">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="btm-footer-column">
+    <h3>Connect</h3>
+    <ul>
+      <li>
+        <a href="mailto:contact@beyondthemessage.org">
+          contact@beyondthemessage.org
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<div class="btm-footer-bottom">
+  © 2024 Beyond the Message ·
+  <a href="/blog/">Stories &amp; Testimonies</a> ·
+  <a href="https://youtube.com/@beyondthemessage?si=VDgrRmIskHezMr-2" target="_blank" rel="noopener">YouTube</a> ·
+  <a href="https://www.tiktok.com/@btm2561?_r=1&#038;_t=ZP-93W9762bKDm" target="_blank" rel="noopener">TikTok</a>
+</div>
+
+
+
+
+
+<p class="wp-block-paragraph"></p>
+<!-- /wp:html -->

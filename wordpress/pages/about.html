@@ -1,0 +1,2008 @@
+<!-- wp:html -->
+<!-- BTM ABOUT REVISION 3 | FIXED WHITE HERO | COPYRIGHT 2024 -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+#btm-about-page {
+  --navy:#1e3a8a;
+  --deep:#111f43;
+  --gold:#facc15;
+  --ink:#18243c;
+  --muted:#536078;
+  --line:#e1e5ec;
+  --paper:#f4f6fa;
+  --cream:#fffbea;
+  font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+  color:var(--ink);
+  background:#fff;
+  font-size:16px;
+  line-height:1.7;
+  text-align:left;
+  margin:0 auto;
+  isolation:isolate;
+}
+
+#btm-about-page *,
+#btm-about-page *::before,
+#btm-about-page *::after {
+  box-sizing:border-box;
+}
+
+#btm-about-page [hidden] {
+  display:none !important;
+}
+
+#btm-about-page h1,
+#btm-about-page h2,
+#btm-about-page h3,
+#btm-about-page p,
+#btm-about-page figure {
+  margin:0;
+  padding:0;
+}
+
+#btm-about-page a {
+  color:inherit;
+  text-decoration:none;
+}
+
+#btm-about-page button {
+  font:inherit;
+  text-transform:none;
+  letter-spacing:normal;
+  cursor:pointer;
+}
+
+#btm-about-page img {
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+#btm-about-page svg {
+  display:block;
+}
+
+#btm-about-page a:focus-visible,
+#btm-about-page button:focus-visible,
+#btm-about-page summary:focus-visible,
+#btm-about-page [tabindex]:focus-visible {
+  outline:3px solid var(--gold);
+  outline-offset:4px;
+}
+
+#btm-about-page .btm-wrap {
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 40px;
+}
+
+#btm-about-page .btm-about-header {
+  min-height:94px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border-bottom:1px solid var(--line);
+  background:#fff;
+  color:var(--ink);
+  padding:0;
+  text-align:left;
+}
+
+#btm-about-page .btm-brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--deep);
+  flex:0 0 auto;
+}
+
+#btm-about-page .btm-brand-mark {
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:11px;
+  background:var(--deep);
+  color:var(--gold);
+  flex-shrink:0;
+}
+
+#btm-about-page .btm-brand-mark svg {
+  width:26px;
+  height:26px;
+}
+
+#btm-about-page .btm-brand strong {
+  display:block;
+  font-size:1rem;
+  font-weight:750;
+  letter-spacing:-.035em;
+  line-height:1.35;
+}
+
+#btm-about-page .btm-brand small {
+  display:block;
+  color:var(--muted);
+  font-size:.61rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-top:4px;
+}
+
+#btm-about-page .btm-nav {
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:23px;
+  min-width:300px;
+  color:var(--muted);
+  font-size:.76rem;
+  font-weight:600;
+  flex:0 0 auto;
+}
+
+#btm-about-page nav a {
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  line-height:inherit;
+}
+
+#btm-about-page .btm-nav a:hover {
+  color:var(--navy);
+}
+
+#btm-about-page .btm-nav a {
+  white-space:nowrap;
+}
+
+#btm-about-page .btm-nav [aria-current="page"] {
+  color:var(--navy);
+  border-bottom:2px solid var(--gold);
+  padding-bottom:5px;
+}
+
+#btm-about-page .btm-mobile-menu {
+  display:none;
+  position:relative;
+}
+
+#btm-about-page .btm-mobile-menu summary {
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  padding:8px 13px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:.76rem;
+  font-weight:600;
+  cursor:pointer;
+  list-style:none;
+}
+
+#btm-about-page .btm-mobile-menu summary::-webkit-details-marker {
+  display:none;
+}
+
+#btm-about-page .btm-mobile-menu nav {
+  position:absolute;
+  right:0;
+  top:52px;
+  z-index:4;
+  min-width:215px;
+  background:white;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:0 12px 35px #111f431a;
+}
+
+#btm-about-page .btm-mobile-menu:not([open]) nav {
+  display:none;
+}
+
+#btm-about-page .btm-mobile-menu a {
+  display:block;
+  padding:11px;
+  font-size:.83rem;
+}
+
+#btm-about-page .btm-kicker {
+  display:flex;
+  align-items:center;
+  gap:11px;
+  color:#806414;
+  font-size:.64rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+#btm-about-page .btm-kicker::before {
+  content:'';
+  width:25px;
+  height:2px;
+  background:var(--gold);
+  flex-shrink:0;
+}
+
+#btm-about-page .btm-about-hero {
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
+  align-items:center;
+  gap:58px;
+  padding:62px 0 64px;
+  background:#fff;
+  color:var(--ink);
+  text-align:left;
+}
+
+#btm-about-page h1 {
+  font-family:Lora,Georgia,serif;
+  font-size:3.5rem;
+  font-size:clamp(2.6rem,4.6vw,3.5rem);
+  line-height:1.16;
+  font-weight:400;
+  letter-spacing:-.035em;
+  color:var(--deep);
+}
+
+#btm-about-page h1 em {
+  color:var(--navy);
+  font-weight:400;
+}
+
+#btm-about-page .btm-hero-copy {
+  margin-top:23px;
+  max-width:470px;
+  color:#43516a;
+  font-size:1rem;
+  line-height:1.8;
+}
+
+#btm-about-page .btm-actions {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:29px;
+}
+
+#btm-about-page .btm-button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+  min-height:48px;
+  padding:12px 19px;
+  border:1px solid var(--navy);
+  border-radius:8px;
+  background:var(--navy);
+  color:#fff;
+  font-size:.78rem;
+  font-weight:600;
+  line-height:1.5;
+  white-space:nowrap;
+  transition:background .15s,border-color .15s;
+}
+
+#btm-about-page .btm-button:hover {
+  background:var(--deep);
+  border-color:var(--deep);
+  color:#fff;
+}
+
+#btm-about-page .btm-button-outline {
+  background:#fff;
+  color:var(--navy);
+  border-color:var(--line);
+}
+
+#btm-about-page .btm-button-outline:hover {
+  background:var(--paper);
+  color:var(--navy);
+  border-color:#bbc8de;
+}
+
+#btm-about-page .btm-button-gold {
+  background:var(--gold);
+  color:var(--deep);
+  border-color:var(--gold);
+}
+
+#btm-about-page .btm-button-gold:hover {
+  background:#ffe265;
+  color:var(--deep);
+  border-color:#ffe265;
+}
+
+#btm-about-page .btm-hero-art {
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  padding:30px;
+  min-height:355px;
+  background:linear-gradient(135deg,#111f43,#203e79);
+  color:#fff;
+}
+
+#btm-about-page .btm-topography {
+  position:absolute;
+  right:-80px;
+  top:-45px;
+  width:400px;
+  height:450px;
+  opacity:.28;
+  pointer-events:none;
+}
+
+#btm-about-page .btm-hero-art > :not(.btm-topography) {
+  position:relative;
+  z-index:1;
+}
+
+#btm-about-page .btm-art-label {
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  color:var(--gold);
+  font-size:.6rem;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+#btm-about-page .btm-art-title {
+  font-family:Lora,Georgia,serif;
+  font-size:2.1rem;
+  line-height:1.22;
+  letter-spacing:-.035em;
+  margin-top:19px;
+  text-align:center;
+}
+
+#btm-about-page .btm-art-title em {
+  color:var(--gold);
+}
+
+#btm-about-page .btm-book-art {
+  width:190px;
+  height:137px;
+  margin:3px auto 13px;
+}
+
+#btm-about-page .btm-art-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding-top:16px;
+  border-top:1px solid #ffffff29;
+  color:#dce4f3;
+  font-size:.62rem;
+  letter-spacing:.06em;
+}
+
+#btm-about-page .btm-values {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:18px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:18px 0;
+  color:var(--muted);
+  font-size:.73rem;
+}
+
+#btm-about-page .btm-values span {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  white-space:nowrap;
+}
+
+#btm-about-page .btm-values span::before {
+  content:'';
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+#btm-about-page .btm-section {
+  padding-top:62px;
+  padding-bottom:62px;
+}
+
+#btm-about-page h2 {
+  font-family:Lora,Georgia,serif;
+  font-size:2.35rem;
+  font-size:clamp(1.75rem,3vw,2.35rem);
+  line-height:1.25;
+  font-weight:500;
+  letter-spacing:-.04em;
+  color:var(--deep);
+}
+
+#btm-about-page .btm-lead {
+  font-size:.98rem;
+  line-height:1.95;
+  color:var(--muted);
+  max-width:720px;
+  margin-top:21px;
+}
+
+#btm-about-page .btm-story {
+  display:grid;
+  grid-template-columns:1.6fr .7fr;
+  gap:64px;
+  align-items:start;
+  border-top:1px solid var(--line);
+  padding-top:35px;
+  margin-top:35px;
+}
+
+#btm-about-page .btm-story h3 {
+  font-size:.72rem;
+  font-weight:650;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--deep);
+  margin-bottom:16px;
+}
+
+#btm-about-page .btm-story p {
+  font-size:.93rem;
+  color:var(--muted);
+  line-height:1.95;
+  margin-bottom:17px;
+}
+
+#btm-about-page .btm-story .btm-signature {
+  color:var(--deep);
+  font-size:.82rem;
+  font-weight:600;
+  margin:22px 0 0;
+}
+
+#btm-about-page .btm-portrait {
+  border-radius:14px;
+  background:var(--cream);
+  padding:12px;
+  border:1px solid #ece6ce;
+}
+
+#btm-about-page .btm-portrait img {
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center 20%;
+  border-radius:9px;
+}
+
+#btm-about-page .btm-portrait figcaption {
+  padding:14px 5px 5px;
+}
+
+#btm-about-page .btm-portrait strong {
+  display:block;
+  font-size:.8rem;
+  color:var(--deep);
+}
+
+#btm-about-page .btm-portrait small {
+  color:var(--muted);
+  font-size:.67rem;
+}
+
+#btm-about-page .btm-resources {
+  background:var(--paper);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+#btm-about-page .btm-section-top {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:32px;
+  margin-bottom:31px;
+}
+
+#btm-about-page .btm-section-top > div:first-child {
+  flex:1;
+  min-width:0;
+}
+
+#btm-about-page .btm-section-note {
+  max-width:325px;
+  color:var(--muted);
+  font-size:.83rem;
+  line-height:1.85;
+}
+
+#btm-about-page .btm-resource-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+
+#btm-about-page .btm-resource {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:25px;
+}
+
+#btm-about-page .btm-resource > :not(.btm-resource-icon) {
+  width:100%;
+}
+
+#btm-about-page .btm-resource-icon {
+  display:grid;
+  place-items:center;
+  width:45px;
+  height:45px;
+  border-radius:11px;
+  background:var(--deep);
+  color:var(--gold);
+  margin-bottom:21px;
+}
+
+#btm-about-page .btm-resource-icon svg {
+  width:26px;
+  height:26px;
+}
+
+#btm-about-page .btm-resource-kind {
+  color:#806414;
+  font-size:.61rem;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+
+#btm-about-page .btm-resource h3 {
+  font-size:1.13rem;
+  font-weight:650;
+  color:var(--deep);
+  letter-spacing:-.03em;
+  line-height:1.4;
+  margin-bottom:12px;
+}
+
+#btm-about-page .btm-resource p {
+  color:var(--muted);
+  font-size:.82rem;
+  line-height:1.9;
+  margin-bottom:25px;
+}
+
+#btm-about-page .btm-card-link {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  width:100%;
+  margin-top:auto;
+  border-top:1px solid var(--line);
+  padding-top:15px;
+  color:var(--navy);
+  font-size:.76rem;
+  font-weight:600;
+}
+
+#btm-about-page .btm-card-link:hover {
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+#btm-about-page .btm-hiveops {
+  display:grid;
+  grid-template-columns:70px 1fr auto;
+  align-items:center;
+  gap:25px;
+  padding:27px 30px;
+  margin-top:24px;
+  border:1px solid #e8ddb2;
+  border-radius:13px;
+  background:var(--cream);
+}
+
+#btm-about-page .btm-hiveops-art {
+  width:63px;
+  height:64px;
+  color:#806414;
+}
+
+#btm-about-page .btm-hiveops h3 {
+  color:var(--deep);
+  font-size:1.2rem;
+  font-weight:600;
+  letter-spacing:-.03em;
+  margin-bottom:7px;
+}
+
+#btm-about-page .btm-hiveops p {
+  color:var(--muted);
+  font-size:.8rem;
+  line-height:1.85;
+  max-width:565px;
+}
+
+#btm-about-page .btm-hiveops .btm-resource-kind {
+  margin-bottom:8px;
+}
+
+#btm-about-page .btm-video-tools {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-bottom:20px;
+}
+
+#btm-about-page .btm-video-tools .btm-quiet-link {
+  margin-right:auto;
+}
+
+#btm-about-page .btm-quiet-link {
+  display:inline-flex;
+  min-height:44px;
+  align-items:center;
+  gap:7px;
+  color:var(--navy);
+  font-size:.76rem;
+  font-weight:600;
+}
+
+#btm-about-page .btm-quiet-link:hover {
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+#btm-about-page .btm-wheel-control {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-width:44px;
+  min-height:44px;
+  padding:8px 13px;
+  border:1px solid #d1d9e7;
+  border-radius:8px;
+  background:#fff;
+  color:var(--navy);
+  font-size:.72rem;
+  font-weight:600;
+  line-height:1.5;
+}
+
+#btm-about-page .btm-wheel-control:hover {
+  background:var(--paper);
+  border-color:var(--navy);
+}
+
+#btm-about-page .btm-wheel-control svg {
+  width:16px;
+  height:16px;
+}
+
+#btm-about-page .btm-video-rail {
+  position:relative;
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  overscroll-behavior-x:contain;
+  scrollbar-width:thin;
+  scrollbar-color:#bcc8dc transparent;
+  list-style:none;
+  padding:4px 4px 15px;
+  margin:0 -4px;
+}
+
+#btm-about-page .btm-video-card {
+  flex:0 0 calc((100% - 40px)/3);
+  min-width:0;
+  scroll-snap-align:start;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  background:white;
+}
+
+#btm-about-page .btm-video-card > a {
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+#btm-about-page .btm-video-card > a:focus-visible {
+  outline-offset:-3px;
+}
+
+#btm-about-page .btm-video-card > a:hover h3 {
+  color:var(--navy);
+}
+
+#btm-about-page .btm-video-image {
+  position:relative;
+  background:#111f43;
+  aspect-ratio:16/9;
+  overflow:hidden;
+}
+
+#btm-about-page .btm-video-image .btm-video-cover {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+
+#btm-about-page .btm-video-image img {
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#btm-about-page .btm-video-short .btm-video-image img {
+  object-fit:contain;
+}
+
+#btm-about-page .btm-video-play {
+  display:grid;
+  place-items:center;
+  position:absolute;
+  left:17px;
+  bottom:14px;
+  width:37px;
+  height:37px;
+  border-radius:50%;
+  background:var(--gold);
+  color:var(--deep);
+  box-shadow:0 2px 12px #0003;
+}
+
+#btm-about-page .btm-video-play svg {
+  width:13px;
+  height:13px;
+  margin-left:2px;
+}
+
+#btm-about-page .btm-video-duration {
+  position:absolute;
+  right:12px;
+  bottom:14px;
+  color:white;
+  background:#081326de;
+  border-radius:4px;
+  padding:3px 6px;
+  font-size:.65rem;
+  line-height:1.4;
+}
+
+#btm-about-page .btm-video-body {
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:20px;
+}
+
+#btm-about-page .btm-video-type {
+  color:#806414;
+  font-size:.6rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  margin-bottom:8px;
+}
+
+#btm-about-page .btm-video-body h3 {
+  color:var(--deep);
+  font-size:.97rem;
+  font-weight:600;
+  line-height:1.55;
+  letter-spacing:-.02em;
+  margin-bottom:17px;
+}
+
+#btm-about-page .btm-video-action {
+  color:var(--navy);
+  font-size:.71rem;
+  font-weight:600;
+  margin-top:auto;
+}
+
+#btm-about-page .btm-video-hint {
+  color:var(--muted);
+  font-size:.72rem;
+  margin-top:14px;
+}
+
+#btm-about-page .btm-ahead {
+  background:#fafbfd;
+  border-top:1px solid var(--line);
+}
+
+#btm-about-page .btm-future-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:0 48px;
+  margin-top:32px;
+}
+
+#btm-about-page .btm-future {
+  border-top:1px solid var(--line);
+  padding:24px 0;
+}
+
+#btm-about-page .btm-future h3 {
+  font-size:.97rem;
+  line-height:1.5;
+  font-weight:650;
+  color:var(--deep);
+  margin-bottom:8px;
+}
+
+#btm-about-page .btm-future p {
+  color:var(--muted);
+  font-size:.83rem;
+  line-height:1.85;
+}
+
+#btm-about-page .btm-future .btm-scripture-ref {
+  display:inline-block;
+  color:var(--navy);
+  font-size:.73rem;
+  margin-top:12px;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+#btm-about-page .btm-cta {
+  background:var(--gold);
+  padding:41px 0;
+}
+
+#btm-about-page .btm-cta-inner {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+#btm-about-page .btm-cta h2 {
+  font-size:1.95rem;
+}
+
+#btm-about-page .btm-cta p {
+  color:#3d4b68;
+  font-size:.86rem;
+  margin-top:9px;
+}
+
+#btm-about-page .btm-cta .btm-actions {
+  margin:0;
+}
+
+#btm-about-page .btm-about-footer {
+  background:var(--deep);
+  color:#d7dfed;
+  padding:43px 0 23px;
+}
+
+#btm-about-page .btm-footer-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);
+  gap:35px;
+  text-align:left;
+}
+
+#btm-about-page .btm-footer-grid > * {
+  min-width:0;
+}
+
+#btm-about-page .btm-about-footer nav {
+  display:block;
+  padding:0;
+  margin:0;
+}
+
+#btm-about-page .btm-footer-brand strong {
+  color:var(--gold);
+  font-size:.91rem;
+  font-weight:650;
+}
+
+#btm-about-page .btm-footer-brand p {
+  max-width:275px;
+  color:#c2cee2;
+  font-size:.8rem;
+  line-height:1.9;
+  margin-top:13px;
+}
+
+#btm-about-page .btm-about-footer h3 {
+  color:var(--gold);
+  font-size:.73rem;
+  font-weight:650;
+  margin-bottom:13px;
+}
+
+#btm-about-page .btm-about-footer ul {
+  display:block;
+  list-style:none;
+  padding:0;
+  margin:0;
+  gap:0;
+  text-align:left;
+}
+
+#btm-about-page .btm-about-footer li {
+  display:block;
+  margin:0 0 9px;
+  padding:0;
+  font-size:.8rem;
+  line-height:1.8;
+}
+
+#btm-about-page .btm-about-footer a {
+  display:inline-block;
+  color:#d7dfed;
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:400;
+  line-height:inherit;
+  text-transform:none;
+  letter-spacing:normal;
+}
+
+#btm-about-page .btm-about-footer a:hover {
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+#btm-about-page .btm-footer-contact {
+  overflow-wrap:anywhere;
+}
+
+#btm-about-page .btm-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  border-top:1px solid #ffffff24;
+  padding-top:18px;
+  margin-top:33px;
+  color:#b0bfd8;
+  font-size:.66rem;
+}
+
+#btm-about-page .btm-footer-bottom a {
+  color:#d7dfed;
+}
+
+#btm-about-page .btm-video-dialog:not([open]) {
+  display:none;
+}
+
+#btm-about-page .btm-video-dialog {
+  position:fixed;
+  inset:0;
+  margin:auto;
+  padding:22px;
+  width:min(900px,calc(100% - 30px));
+  max-height:90vh;
+  overflow:auto;
+  color:var(--ink);
+  background:white;
+  border:0;
+  border-radius:14px;
+  box-shadow:0 20px 90px #0004;
+}
+
+#btm-about-page .btm-video-dialog::backdrop {
+  background:#071326da;
+}
+
+#btm-about-page .btm-dialog-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:17px;
+}
+
+#btm-about-page .btm-dialog-title {
+  font-size:1.1rem;
+  color:var(--deep);
+  font-weight:600;
+  line-height:1.5;
+}
+
+#btm-about-page .btm-video-player {
+  background:#071326;
+  min-height:200px;
+}
+
+#btm-about-page .btm-video-player iframe {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  min-height:200px;
+  border:0;
+}
+
+#btm-about-page .btm-dialog-bottom {
+  margin-top:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+#btm-about-page .btm-dialog-note {
+  font-size:.73rem;
+  color:var(--muted);
+}
+
+#btm-about-page .btm-sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+@media(max-width:950px) {
+  #btm-about-page .btm-wrap { padding:0 26px; }
+  #btm-about-page .btm-nav { gap:15px; min-width:250px; font-size:.7rem; }
+  #btm-about-page .btm-about-hero { gap:35px; padding:47px 0 49px; }
+  #btm-about-page h1 { font-size:3.1rem; }
+  #btm-about-page .btm-hero-art { padding:25px; min-height:325px; }
+  #btm-about-page .btm-art-title { font-size:1.85rem; }
+  #btm-about-page .btm-story { gap:37px; }
+  #btm-about-page .btm-resource-grid { gap:15px; }
+  #btm-about-page .btm-resource { padding:23px 20px; }
+  #btm-about-page .btm-hiveops { grid-template-columns:55px 1fr; gap:20px; }
+  #btm-about-page .btm-hiveops > a { grid-column:2; justify-self:start; }
+  #btm-about-page .btm-hiveops-art { width:53px; }
+  #btm-about-page .btm-video-card { flex-basis:calc((100% - 20px)/2); }
+  #btm-about-page .btm-footer-grid { gap:23px; }
+}
+
+@media(max-width:680px) {
+  #btm-about-page .btm-wrap { padding:0 21px; }
+  #btm-about-page .btm-about-header { min-height:80px; gap:12px; }
+  #btm-about-page .btm-brand strong { font-size:.92rem; }
+  #btm-about-page .btm-brand-mark { width:37px; height:37px; }
+  #btm-about-page .btm-nav { display:none; }
+  #btm-about-page .btm-mobile-menu { display:block; }
+  #btm-about-page .btm-about-hero { grid-template-columns:1fr; gap:30px; padding:36px 0 37px; }
+  #btm-about-page h1 { font-size:2.8rem; }
+  #btm-about-page h2 { font-size:1.8rem; }
+  #btm-about-page .btm-hero-copy { font-size:.9rem; margin-top:20px; }
+  #btm-about-page .btm-hero-art { min-height:315px; }
+  #btm-about-page .btm-art-title { font-size:2rem; }
+  #btm-about-page .btm-actions { gap:10px; }
+  #btm-about-page .btm-button { padding:12px 16px; font-size:.75rem; }
+  #btm-about-page .btm-values { gap:12px; flex-direction:column; padding:17px 0; font-size:.71rem; }
+  #btm-about-page .btm-section { padding-top:42px; padding-bottom:42px; }
+  #btm-about-page .btm-story { grid-template-columns:1fr; gap:26px; margin-top:28px; padding-top:27px; }
+  #btm-about-page .btm-portrait { max-width:265px; }
+  #btm-about-page .btm-story p { font-size:.88rem; }
+  #btm-about-page .btm-section-top { flex-direction:column; align-items:flex-start; gap:17px; margin-bottom:25px; }
+  #btm-about-page .btm-section-note { max-width:none; }
+  #btm-about-page .btm-resource-grid { grid-template-columns:1fr; }
+  #btm-about-page .btm-resource { padding:25px; }
+  #btm-about-page .btm-resource-icon { margin-bottom:17px; }
+  #btm-about-page .btm-hiveops { grid-template-columns:1fr; padding:25px; gap:17px; }
+  #btm-about-page .btm-hiveops > a { grid-column:1; }
+  #btm-about-page .btm-hiveops-art { width:50px; height:50px; }
+  #btm-about-page .btm-video-card { flex-basis:88%; }
+  #btm-about-page .btm-video-tools { gap:8px; }
+  #btm-about-page .btm-video-tools .btm-quiet-link { flex:1 0 100%; }
+  #btm-about-page .btm-future-grid { grid-template-columns:1fr; gap:0; margin-top:24px; }
+  #btm-about-page .btm-cta { padding:33px 0; }
+  #btm-about-page .btm-cta-inner { flex-direction:column; align-items:flex-start; gap:24px; }
+  #btm-about-page .btm-footer-grid { grid-template-columns:repeat(2,1fr); gap:26px 23px; }
+  #btm-about-page .btm-footer-brand { grid-column:1/span 2; }
+  #btm-about-page .btm-footer-contact { grid-column:1/span 2; }
+  #btm-about-page .btm-footer-bottom { flex-direction:column; gap:12px; }
+  #btm-about-page .btm-video-dialog { padding:17px; }
+  #btm-about-page .btm-dialog-header { gap:12px; }
+  #btm-about-page .btm-dialog-title { font-size:.94rem; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  #btm-about-page *,
+  #btm-about-page *::before,
+  #btm-about-page *::after {
+    scroll-behavior:auto !important;
+    transition:none !important;
+  }
+}
+
+@media print {
+  #btm-about-page .btm-wrap { padding:0; }
+  #btm-about-page .btm-about-header,
+  #btm-about-page .btm-video-tools,
+  #btm-about-page .btm-about-footer,
+  #btm-about-page .btm-cta {
+    display:none !important;
+  }
+  #btm-about-page .btm-section { padding:24px 0; }
+}
+</style>
+
+<div id="btm-about-page" data-btm-version="ABOUT-2024-R3">
+
+  <div class="btm-wrap">
+
+    <header class="btm-about-header" style="background:#fff;color:#18243c;text-align:left;padding:0;">
+
+      <a class="btm-brand" href="https://beyondthemessage.org/" aria-label="Beyond the Message home">
+        <span class="btm-brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5.5C8.8 3.6 5.3 3.7 2.5 4.8v14c2.8-1.1 6.3-1.2 9.5.7 3.2-1.9 6.7-1.8 9.5-.7v-14C18.7 3.7 15.2 3.6 12 5.5Z"/>
+            <path d="M12 5.5v14M6 8.2l2.5.3M6 11.8l2.5.3M15.5 8.5l2.5-.3M15.5 12.1l2.5-.3"/>
+          </svg>
+        </span>
+        <span>
+          <strong>Beyond the Message</strong>
+          <small>A ministry of purpose &amp; presence</small>
+        </span>
+      </a>
+
+      <nav class="btm-nav" aria-label="About page navigation">
+        <a href="https://beyondthemessage.org/">Home</a>
+        <a href="https://beyondthemessage.org/study-hub/">Study Hub</a>
+        <a href="https://beyondthemessage.org/journey-map/">Journey Map</a>
+        <a href="https://beyondthemessage.org/the-belief-files/">The Belief Files</a>
+        <a href="https://beyondthemessage.org/about/" aria-current="page">About</a>
+      </nav>
+
+      <details class="btm-mobile-menu">
+        <summary>Menu <span aria-hidden="true">＋</span></summary>
+        <nav aria-label="About page mobile navigation">
+          <a href="https://beyondthemessage.org/">Home</a>
+          <a href="https://beyondthemessage.org/study-hub/">Study Hub</a>
+          <a href="https://beyondthemessage.org/journey-map/">Journey Map</a>
+          <a href="https://beyondthemessage.org/the-belief-files/">The Belief Files</a>
+          <a href="https://beyondthemessage.org/about/" aria-current="page">About</a>
+          <a href="https://angel.beyondthemessage.org" target="_blank" rel="noopener noreferrer">
+            Angel Chat <span aria-hidden="true">↗</span>
+            <span class="btm-sr-only"> (opens in a new tab)</span>
+          </a>
+        </nav>
+      </details>
+
+    </header>
+
+    <section class="btm-about-hero" style="background:#fff;color:#18243c;text-align:left;" aria-labelledby="btm-about-title">
+
+      <div>
+        <div class="btm-kicker">About Beyond the Message</div>
+        <h1 id="btm-about-title">Faith that goes<br><em>beyond Sunday.</em></h1>
+        <p class="btm-hero-copy">Helping people grow in faith and live out God’s Word through Bible studies, honest conversations, and digital resources.</p>
+        <div class="btm-actions">
+          <a class="btm-button" href="#btm-about-resources">
+            Explore the resources <span aria-hidden="true">→</span>
+          </a>
+          <a class="btm-button btm-button-outline" href="#btm-about-videos">
+            Watch the series <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="btm-hero-art" aria-hidden="true">
+
+        <svg class="btm-topography" viewBox="0 0 420 300" fill="none" aria-hidden="true">
+          <g stroke="#8094be" stroke-width=".7">
+            <path d="M90-20C5 50 145 160 55 260S190 380 300 270 490 250 415 135 350 70 420-10"/>
+            <path d="M115-20C30 45 170 160 80 260S210 355 310 250 465 225 400 130 325 70 395-10"/>
+            <path d="M140-20C55 40 195 160 105 260S230 330 320 230 440 200 385 125 300 70 370-10"/>
+            <path d="M165-20C80 35 220 160 130 260S250 305 330 210 415 175 370 120 275 70 345-10"/>
+            <path d="M190-20C105 30 245 160 155 260S270 280 340 190 390 150 355 115 250 70 320-10"/>
+            <path d="M215-20C130 25 270 160 180 260S290 255 350 170 365 125 340 110 225 70 295-10"/>
+            <path d="M240-20C155 20 295 160 205 260S310 230 360 150 340 100 325 105 200 70 270-10"/>
+            <path d="M265-20C180 15 320 160 230 260S330 205 370 130 315 75 310 100 175 70 245-10"/>
+          </g>
+        </svg>
+
+        <div class="btm-art-label">
+          <span>One mission</span>
+          <span>Many ways to carry it</span>
+        </div>
+
+        <div class="btm-art-title">The Word,<br><em>lived out.</em></div>
+
+        <svg class="btm-book-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="150" cy="62" r="26" fill="#facc15" opacity=".95"/>
+          <path d="M150 20v-9M112 31l-8-8M188 31l8-8M106 62H94M194 62h12" stroke="#facc15"/>
+          <path d="M62 105c34-12 63-7 88 8 25-15 54-20 88-8v81c-34-12-63-7-88 8-25-15-54-20-88-8Z" fill="#142c59" stroke="#facc15" stroke-width="2.2"/>
+          <path d="M70 96c29-8 56-5 80 10 24-15 51-18 80-10v77c-29-8-56-5-80 10-24-15-51-18-80-10Z" fill="#fff4d1" stroke="#facc15" stroke-width="2.2"/>
+          <path d="M150 107v77M84 116c15-2 29 0 48 7M84 131c15-2 29 0 48 7M84 146c15-2 29 0 48 7M168 123c19-7 33-9 48-7M168 138c19-7 33-9 48-7M168 153c19-7 33-9 48-7" stroke="#385786"/>
+          <path d="M169 104v57l9-5 9 5v-62" fill="#facc15" stroke="none"/>
+        </svg>
+
+        <div class="btm-art-bottom">
+          <span>Read Scripture</span>
+          <span>Make room to reflect</span>
+          <span>Walk with God</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="btm-values" aria-label="Our foundation">
+      <span>Rooted in Scripture</span>
+      <span>Centered on Jesus Christ</span>
+      <span>Faith for everyday life</span>
+    </div>
+
+    <section class="btm-section" aria-labelledby="btm-about-mission">
+
+      <div class="btm-kicker">Our heart</div>
+      <h2 id="btm-about-mission">Rooted in Scripture.<br>Made for everyday life.</h2>
+
+      <p class="btm-lead">Our mission is to share the Gospel of Jesus Christ and help people live out God’s Word. Through teaching, study resources, thoughtful conversations, and digital tools, we want to encourage faith that reaches beyond a Sunday message and into the way we live.</p>
+
+      <div class="btm-story">
+
+        <div>
+          <h3>A message from the founder</h3>
+          <p>When I first prayed about Beyond the Message, I knew it had to be more than another podcast or ministry project. I felt God calling me to build something that not only speaks truth but equips people to live it out — a place where faith and technology could meet to multiply the reach of the Gospel.</p>
+          <p>At its core, the vision is simple: one mission — to share the Gospel of Jesus Christ. Everything flows from that. We do this through discipleship teaching, leadership development, and creating spaces where God’s Word is lived, not just heard.</p>
+          <p class="btm-signature">— Jamie Dennis</p>
+        </div>
+
+        <figure class="btm-portrait">
+          <img src="https://beyondthemessage.org/wp-content/uploads/2025/09/JD-Headshot-scaled.jpg" width="320" height="400" alt="Jamie Dennis, founder of Beyond the Message" loading="lazy" decoding="async">
+          <figcaption>
+            <strong>Jamie Dennis</strong>
+            <small>Founder · Beyond the Message</small>
+          </figcaption>
+        </figure>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <section class="btm-resources" id="btm-about-resources" aria-labelledby="btm-about-resources-title">
+
+    <div class="btm-wrap btm-section">
+
+      <div class="btm-section-top">
+        <div>
+          <div class="btm-kicker">Explore what we’ve built</div>
+          <h2 id="btm-about-resources-title">Where the mission<br>takes life.</h2>
+        </div>
+        <p class="btm-section-note">These resources are available today. Start with a question, a passage, or a moment from your own life.</p>
+      </div>
+
+      <div class="btm-resource-grid">
+
+        <article class="btm-resource">
+
+          <div class="btm-resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 3.5h16a1.5 1.5 0 0 1 1.5 1.5v11a1.5 1.5 0 0 1-1.5 1.5h-8l-5.5 4v-4H4A1.5 1.5 0 0 1 2.5 16V5A1.5 1.5 0 0 1 4 3.5Z"/>
+              <path d="M7 8h10M7 12h7"/>
+            </svg>
+          </div>
+
+          <div class="btm-resource-kind">Conversation &amp; reflection</div>
+          <h3>Angel Chat</h3>
+          <p>A space to pause, pray, and explore Scripture. Bring your questions and reflect on what God’s Word speaks into your everyday life.</p>
+
+          <a class="btm-card-link" href="https://angel.beyondthemessage.org" target="_blank" rel="noopener noreferrer">
+            Open Angel Chat <span aria-hidden="true">↗</span>
+            <span class="btm-sr-only"> (opens in a new tab)</span>
+          </a>
+
+        </article>
+
+        <article class="btm-resource">
+
+          <div class="btm-resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m3 6 4.5 4L12 3l4.5 7L21 6l-2 12H5L3 6Z"/>
+              <path d="M6 21h12M6 15h12"/>
+            </svg>
+          </div>
+
+          <div class="btm-resource-kind">Wisdom for the way you lead</div>
+          <h3>The King’s Counsel</h3>
+          <p>Scripture-rooted counsel for leadership, character, and everyday decisions. Make time to reflect on the person you’re becoming and the influence you carry.</p>
+
+          <a class="btm-card-link" href="https://king-s-counsel-leadership-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Explore the King’s Counsel <span aria-hidden="true">↗</span>
+            <span class="btm-sr-only"> (opens in a new tab)</span>
+          </a>
+
+        </article>
+
+        <article class="btm-resource">
+
+          <div class="btm-resource-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5.5C8.8 3.6 5.3 3.7 2.5 4.8v14c2.8-1.1 6.3-1.2 9.5.7 3.2-1.9 6.7-1.8 9.5-.7v-14C18.7 3.7 15.2 3.6 12 5.5Z"/>
+              <path d="M12 5.5v14M6 8.2l2.5.3M6 11.8l2.5.3M15.5 8.5l2.5-.3M15.5 12.1l2.5-.3"/>
+            </svg>
+          </div>
+
+          <div class="btm-resource-kind">Study &amp; a daily faithful step</div>
+          <h3>The Study Hub</h3>
+          <p>Go deeper with weekly study notes, Daily Compass readings, guided prayers, and teacher resources. Carry the message into the rest of your week.</p>
+
+          <a class="btm-card-link" href="https://beyondthemessage.org/study-hub/">
+            Open the Study Hub <span aria-hidden="true">→</span>
+          </a>
+
+        </article>
+
+
+        <article class="btm-resource" id="btm-about-belief" aria-labelledby="btm-about-belief-title">
+          <div class="btm-resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h7l2 2h9v11H3V7Z"/><path d="M3 7V4h7l2 3M7 13h10M7 16h7"/></svg></div>
+          <div class="btm-resource-kind">Faith, history &amp; evidence</div>
+          <h3 id="btm-about-belief-title">The Belief Files</h3>
+          <p>Explore religious claims through Scripture, history, and primary sources. Begin with the LDS comparison and our First Vision investigation.</p>
+          <a class="btm-card-link" href="https://beyondthemessage.org/the-belief-files/">
+            Explore The Belief Files <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+
+      <aside class="btm-hiveops" aria-labelledby="btm-about-hiveops">
+
+        <svg class="btm-hiveops-art" viewBox="-1 0 66 68" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="m32 3 16 9v18l-16 9-16-9V12L32 3Z"/>
+          <path d="m16 30 16 9v18l-16 9L0 57V39l16-9ZM48 30l16 9v18l-16 9-16-9V39l16-9Z"/>
+          <path d="M32 13v14M25 20h14" stroke="#1e3a8a" stroke-width="2"/>
+        </svg>
+
+        <div>
+          <div class="btm-resource-kind">Business &amp; marketing · Also from Jamie Dennis</div>
+          <h3 id="btm-about-hiveops">Build with intention. Explore HiveOps.</h3>
+          <p>Explore business solutions and AI integration through HiveOps, Jamie’s separate business venture. Visit HiveOps to learn more about its work and approach.</p>
+        </div>
+
+        <a class="btm-button btm-button-outline" href="https://hive-ops.co/" target="_blank" rel="noopener noreferrer">
+          Visit HiveOps <span aria-hidden="true">↗</span>
+          <span class="btm-sr-only"> (opens in a new tab)</span>
+        </a>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="btm-wrap btm-section" id="btm-about-videos" aria-labelledby="btm-about-videos-title" data-btm-wheel>
+
+    <div class="btm-section-top">
+      <div>
+        <div class="btm-kicker">Watch the story. Follow the connection.</div>
+        <h2 id="btm-about-videos-title">What’s in the Book?</h2>
+      </div>
+      <p class="btm-section-note">Step into the stories of Scripture, trace their connections, and reflect on your own walk with God.</p>
+    </div>
+
+    <div class="btm-video-tools">
+
+      <a class="btm-quiet-link" href="https://www.youtube.com/@BeyondTheMessage" target="_blank" rel="noopener noreferrer">
+        Explore the YouTube channel <span aria-hidden="true">↗</span>
+        <span class="btm-sr-only"> (opens in a new tab)</span>
+      </a>
+
+      <button class="btm-wheel-control" type="button" data-btm-rotate aria-pressed="false" aria-controls="btm-about-video-rail" hidden>
+        Start rotation
+      </button>
+
+      <button class="btm-wheel-control" type="button" data-btm-previous aria-label="Previous videos" aria-controls="btm-about-video-rail" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m14 5-7 7 7 7"/>
+        </svg>
+      </button>
+
+      <button class="btm-wheel-control" type="button" data-btm-next aria-label="Next videos" aria-controls="btm-about-video-rail" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m10 5 7 7-7 7"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <ul class="btm-video-rail" id="btm-about-video-rail" aria-label="Featured videos from Beyond the Message" tabindex="0" data-btm-rail>
+
+      <li class="btm-video-card btm-video-short">
+        <a href="https://www.youtube.com/shorts/O27U9aTCh5w" target="_blank" rel="noopener noreferrer" data-btm-video="O27U9aTCh5w" data-btm-title="ABRAHAM: &quot;When God Doesn&#x27;t Show You the Whole Plan&quot;" aria-label="Watch ABRAHAM: &quot;When God Doesn&#x27;t Show You the Whole Plan&quot; on YouTube (opens in a new tab)">
+
+          <div class="btm-video-image">
+
+            <svg class="btm-video-cover" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="btm-cover-O27U9aTCh5w" x2="1" y2="1">
+                  <stop stop-color="#111f43"/>
+                  <stop offset="1" stop-color="#203f7c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btm-cover-O27U9aTCh5w)"/>
+              <g fill="none" stroke="#849bc4" opacity=".25">
+                <path d="M450-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M480-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M510-30c-70 95 110 180 20 280s90 170 190 90"/>
+              </g>
+              <text x="35" y="54" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2" fill="#facc15">SHORT · ABRAHAM</text>
+              <text x="35" y="166" font-family="Lora,Georgia,serif" font-size="42" fill="#fff4d1">ABRAHAM</text>
+              <path d="M35 188h70" stroke="#facc15" stroke-width="3"/>
+              <text x="35" y="235" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d1dbee">What’s in the Book?</text>
+              <circle cx="534" cy="143" r="27" fill="#facc15" opacity=".85"/>
+              <path d="M485 193c23-7 42-4 59 8 17-12 36-15 59-8v60c-23-7-42-4-59 8-17-12-36-15-59-8Z" fill="#fff4d1" stroke="#facc15" stroke-width="2"/>
+              <path d="M544 201v60" stroke="#1e3a8a"/>
+            </svg>
+
+            <img src="https://i.ytimg.com/vi/O27U9aTCh5w/frame0.jpg" alt="" width="640" height="360" loading="lazy" decoding="async">
+
+            <span class="btm-video-play" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M3 1.8 13.5 8 3 14.2V1.8Z"/>
+              </svg>
+            </span>
+
+            <span class="btm-video-duration">1:04</span>
+
+          </div>
+
+          <div class="btm-video-body">
+            <span class="btm-video-type">Short · Abraham</span>
+            <h3>Abraham: When God Doesn’t Show You the Whole Plan</h3>
+            <span class="btm-video-action" data-btm-video-action>Watch on YouTube ↗</span>
+          </div>
+
+        </a>
+      </li>
+
+      <li class="btm-video-card">
+        <a href="https://www.youtube.com/watch?v=SPXKfENdHcs" target="_blank" rel="noopener noreferrer" data-btm-video="SPXKfENdHcs" data-btm-title="Moses — Calling, Power &amp; Deliverance | What’s in the Book? Episode 3" aria-label="Watch Moses — Calling, Power &amp; Deliverance | What’s in the Book? Episode 3 on YouTube (opens in a new tab)">
+
+          <div class="btm-video-image">
+
+            <svg class="btm-video-cover" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="btm-cover-SPXKfENdHcs" x2="1" y2="1">
+                  <stop stop-color="#111f43"/>
+                  <stop offset="1" stop-color="#203f7c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btm-cover-SPXKfENdHcs)"/>
+              <g fill="none" stroke="#849bc4" opacity=".25">
+                <path d="M450-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M480-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M510-30c-70 95 110 180 20 280s90 170 190 90"/>
+              </g>
+              <text x="35" y="54" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2" fill="#facc15">EPISODE 3 · MOSES</text>
+              <text x="35" y="166" font-family="Lora,Georgia,serif" font-size="42" fill="#fff4d1">MOSES</text>
+              <path d="M35 188h70" stroke="#facc15" stroke-width="3"/>
+              <text x="35" y="235" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d1dbee">What’s in the Book?</text>
+              <circle cx="534" cy="143" r="27" fill="#facc15" opacity=".85"/>
+              <path d="M485 193c23-7 42-4 59 8 17-12 36-15 59-8v60c-23-7-42-4-59 8-17-12-36-15-59-8Z" fill="#fff4d1" stroke="#facc15" stroke-width="2"/>
+              <path d="M544 201v60" stroke="#1e3a8a"/>
+            </svg>
+
+            <img src="https://i.ytimg.com/vi/SPXKfENdHcs/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLBE64qilxWXY6NRO_QgFeOxfvUxOA" alt="" width="640" height="360" loading="lazy" decoding="async">
+
+            <span class="btm-video-play" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M3 1.8 13.5 8 3 14.2V1.8Z"/>
+              </svg>
+            </span>
+
+            <span class="btm-video-duration">37:51</span>
+
+          </div>
+
+          <div class="btm-video-body">
+            <span class="btm-video-type">Episode 3 · Moses</span>
+            <h3>Moses — Calling, Power &amp; Deliverance</h3>
+            <span class="btm-video-action" data-btm-video-action>Watch on YouTube ↗</span>
+          </div>
+
+        </a>
+      </li>
+
+      <li class="btm-video-card">
+        <a href="https://www.youtube.com/watch?v=liSp87UpLcA" target="_blank" rel="noopener noreferrer" data-btm-video="liSp87UpLcA" data-btm-title="From Egypt to Revelation: Judgment, Refuge &amp; Jesus | Episode 4" aria-label="Watch From Egypt to Revelation: Judgment, Refuge &amp; Jesus | Episode 4 on YouTube (opens in a new tab)">
+
+          <div class="btm-video-image">
+
+            <svg class="btm-video-cover" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="btm-cover-liSp87UpLcA" x2="1" y2="1">
+                  <stop stop-color="#111f43"/>
+                  <stop offset="1" stop-color="#203f7c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btm-cover-liSp87UpLcA)"/>
+              <g fill="none" stroke="#849bc4" opacity=".25">
+                <path d="M450-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M480-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M510-30c-70 95 110 180 20 280s90 170 190 90"/>
+              </g>
+              <text x="35" y="54" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2" fill="#facc15">EPISODE 4 · EGYPT TO REVELATION</text>
+              <text x="35" y="166" font-family="Lora,Georgia,serif" font-size="29" fill="#fff4d1">EGYPT TO REVELATION</text>
+              <path d="M35 188h70" stroke="#facc15" stroke-width="3"/>
+              <text x="35" y="235" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d1dbee">What’s in the Book?</text>
+              <circle cx="534" cy="143" r="27" fill="#facc15" opacity=".85"/>
+              <path d="M485 193c23-7 42-4 59 8 17-12 36-15 59-8v60c-23-7-42-4-59 8-17-12-36-15-59-8Z" fill="#fff4d1" stroke="#facc15" stroke-width="2"/>
+              <path d="M544 201v60" stroke="#1e3a8a"/>
+            </svg>
+
+            <img src="https://i.ytimg.com/vi/liSp87UpLcA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLCGX9gmBonkxZ-P3zr_X_gUmSJzHQ" alt="" width="640" height="360" loading="lazy" decoding="async">
+
+            <span class="btm-video-play" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M3 1.8 13.5 8 3 14.2V1.8Z"/>
+              </svg>
+            </span>
+
+            <span class="btm-video-duration">22:41</span>
+
+          </div>
+
+          <div class="btm-video-body">
+            <span class="btm-video-type">Episode 4 · Egypt to Revelation</span>
+            <h3>From Egypt to Revelation: Judgment, Refuge &amp; Jesus</h3>
+            <span class="btm-video-action" data-btm-video-action>Watch on YouTube ↗</span>
+          </div>
+
+        </a>
+      </li>
+
+      <li class="btm-video-card btm-video-short">
+        <a href="https://www.youtube.com/shorts/Wkz2MVupktA" target="_blank" rel="noopener noreferrer" data-btm-video="Wkz2MVupktA" data-btm-title="When waiting gets hard, don’t run ahead of God. Trust His timing. | Genesis 16 #shorts #god #wisdom" aria-label="Watch When waiting gets hard, don’t run ahead of God. Trust His timing. | Genesis 16 #shorts #god #wisdom on YouTube (opens in a new tab)">
+
+          <div class="btm-video-image">
+
+            <svg class="btm-video-cover" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="btm-cover-Wkz2MVupktA" x2="1" y2="1">
+                  <stop stop-color="#111f43"/>
+                  <stop offset="1" stop-color="#203f7c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btm-cover-Wkz2MVupktA)"/>
+              <g fill="none" stroke="#849bc4" opacity=".25">
+                <path d="M450-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M480-30c-70 95 110 180 20 280s90 170 190 90"/>
+                <path d="M510-30c-70 95 110 180 20 280s90 170 190 90"/>
+              </g>
+              <text x="35" y="54" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2" fill="#facc15">SHORT · GENESIS 16</text>
+              <text x="35" y="166" font-family="Lora,Georgia,serif" font-size="29" fill="#fff4d1">WAITING WITH FAITH</text>
+              <path d="M35 188h70" stroke="#facc15" stroke-width="3"/>
+              <text x="35" y="235" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d1dbee">What’s in the Book?</text>
+              <circle cx="534" cy="143" r="27" fill="#facc15" opacity=".85"/>
+              <path d="M485 193c23-7 42-4 59 8 17-12 36-15 59-8v60c-23-7-42-4-59 8-17-12-36-15-59-8Z" fill="#fff4d1" stroke="#facc15" stroke-width="2"/>
+              <path d="M544 201v60" stroke="#1e3a8a"/>
+            </svg>
+
+            <img src="https://i.ytimg.com/vi/Wkz2MVupktA/frame0.jpg" alt="" width="640" height="360" loading="lazy" decoding="async">
+
+            <span class="btm-video-play" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M3 1.8 13.5 8 3 14.2V1.8Z"/>
+              </svg>
+            </span>
+
+            <span class="btm-video-duration">0:20</span>
+
+          </div>
+
+          <div class="btm-video-body">
+            <span class="btm-video-type">Short · Genesis 16</span>
+            <h3>When waiting gets hard, don’t run ahead of God. Trust His timing.</h3>
+            <span class="btm-video-action" data-btm-video-action>Watch on YouTube ↗</span>
+          </div>
+
+        </a>
+      </li>
+
+    </ul>
+
+    <output class="btm-sr-only" aria-live="polite" aria-atomic="true" data-btm-status></output>
+    <p class="btm-video-hint">Browse the clips and episodes. Choose a video to watch, or swipe to explore more.</p>
+
+  </section>
+
+  <section class="btm-ahead" aria-labelledby="btm-about-ahead">
+
+    <div class="btm-wrap btm-section">
+
+      <div class="btm-kicker">What’s ahead</div>
+      <h2 id="btm-about-ahead">More ways to grow, in time.</h2>
+      <p class="btm-lead">Beyond the Message is still taking shape. These are future directions we’re exploring as we continue to build resources for people in different seasons of life.</p>
+
+      <div class="btm-future-grid">
+
+        <article class="btm-future">
+          <h3>Women of Faith</h3>
+          <p>Resources to encourage women to grow in faith and lead with wisdom and courage.</p>
+          <a class="btm-scripture-ref" href="https://www.biblegateway.com/passage/?search=Judges+4-5%3B+Acts+18%3A26&amp;version=KJV" target="_blank" rel="noopener noreferrer">
+            Judges 4–5 · Acts 18:26
+            <span class="btm-sr-only"> (read KJV in a new tab)</span>
+          </a>
+        </article>
+
+        <article class="btm-future">
+          <h3>Men of Faith</h3>
+          <p>Fatherhood, biblical manhood, and faithful discipleship in everyday life.</p>
+          <a class="btm-scripture-ref" href="https://www.biblegateway.com/passage/?search=Joshua+1%3A9%3B+1+Corinthians+16%3A13-14&amp;version=KJV" target="_blank" rel="noopener noreferrer">
+            Joshua 1:9 · 1 Corinthians 16:13–14
+            <span class="btm-sr-only"> (read KJV in a new tab)</span>
+          </a>
+        </article>
+
+        <article class="btm-future">
+          <h3>Youth &amp; Young Adults</h3>
+          <p>Encouragement to stand firm and follow Jesus in a noisy digital world.</p>
+          <a class="btm-scripture-ref" href="https://www.biblegateway.com/passage/?search=1+Timothy+4%3A12%3B+Daniel+1%3A8&amp;version=KJV" target="_blank" rel="noopener noreferrer">
+            1 Timothy 4:12 · Daniel 1:8
+            <span class="btm-sr-only"> (read KJV in a new tab)</span>
+          </a>
+        </article>
+
+        <article class="btm-future">
+          <h3>Community &amp; Marketplace</h3>
+          <p>Branded merchandise and sponsored resources to equip the body of Christ and help extend the ministry’s reach.</p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="btm-cta" aria-labelledby="btm-about-next">
+
+    <div class="btm-wrap btm-cta-inner">
+
+      <div>
+        <h2 id="btm-about-next">Find your next step.</h2>
+        <p>Continue the journey beyond the message.</p>
+      </div>
+
+      <div class="btm-actions">
+        <a class="btm-button" href="https://beyondthemessage.org/study-hub/">
+          Open the Study Hub <span aria-hidden="true">→</span>
+        </a>
+        <a class="btm-button btm-button-outline" href="https://www.youtube.com/@BeyondTheMessage" target="_blank" rel="noopener noreferrer">
+          Watch the series <span aria-hidden="true">↗</span>
+          <span class="btm-sr-only"> (opens in a new tab)</span>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="btm-about-footer" style="background:#111f43;color:#d7dfed;text-align:left;">
+
+    <div class="btm-wrap">
+
+      <div class="btm-footer-grid">
+
+        <div class="btm-footer-brand">
+          <strong>Beyond the Message</strong>
+          <p>A ministry of purpose &amp; presence.<br>Helping people grow in faith and carry God’s Word into everyday life.</p>
+        </div>
+
+        <nav aria-label="Explore Beyond the Message">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="https://beyondthemessage.org/">Home</a></li>
+            <li><a href="https://beyondthemessage.org/study-hub/">Study Hub</a></li>
+            <li><a href="https://beyondthemessage.org/journey-map/">Journey Map</a></li>
+            <li><a href="https://beyondthemessage.org/blog/">Stories &amp; Testimonies</a></li>
+            <li><a href="https://beyondthemessage.org/about/" aria-current="page">About</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Beyond the Message resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://beyondthemessage.org/the-belief-files/">The Belief Files</a></li>
+            <li>
+              <a href="https://angel.beyondthemessage.org" target="_blank" rel="noopener noreferrer">
+                Angel Chat<span class="btm-sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://king-s-counsel-leadership-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+                The King’s Counsel<span class="btm-sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@BeyondTheMessage" target="_blank" rel="noopener noreferrer">
+                YouTube<span class="btm-sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="btm-footer-contact">
+          <h3>Connect</h3>
+          <ul>
+            <li>
+              <a href="mailto:contact@beyondthemessage.org">contact@beyondthemessage.org</a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@btm2561" target="_blank" rel="noopener noreferrer">
+                TikTok<span class="btm-sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="btm-footer-bottom">
+        <span>© 2024 Beyond the Message</span>
+        <a href="https://beyondthemessage.org/privacy-policy/">Privacy Policy</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <dialog class="btm-video-dialog" aria-labelledby="btm-about-dialog-title" data-btm-dialog>
+
+    <div class="btm-dialog-header">
+      <h3 class="btm-dialog-title" id="btm-about-dialog-title" data-btm-dialog-title>Watch a featured video</h3>
+      <button class="btm-wheel-control" type="button" data-btm-close aria-label="Close video">
+        Close <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div class="btm-video-player" data-btm-player></div>
+
+    <div class="btm-dialog-bottom">
+      <p class="btm-dialog-note">Video playback provided by YouTube.</p>
+      <a class="btm-quiet-link" href="https://www.youtube.com/@BeyondTheMessage" target="_blank" rel="noopener noreferrer" data-btm-youtube-link>
+        Watch on YouTube <span aria-hidden="true">↗</span>
+        <span class="btm-sr-only"> (opens in a new tab)</span>
+      </a>
+    </div>
+
+  </dialog>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  const root = document.getElementById('btm-about-page');
+  if (!root || root.dataset.btmReady === 'true') return;
+  root.dataset.btmReady = 'true';
+
+  root.querySelectorAll('.btm-video-image img').forEach(function (image) {
+    image.addEventListener('error', function () {
+      image.hidden = true;
+    });
+    if (image.complete) {
+      if (image.naturalWidth === 0) image.hidden = true;
+    }
+  });
+
+  const wheel = root.querySelector('[data-btm-wheel]');
+  if (!wheel) return;
+
+  const rail = wheel.querySelector('[data-btm-rail]');
+  const cards = Array.from(rail.children);
+  const previous = wheel.querySelector('[data-btm-previous]');
+  const next = wheel.querySelector('[data-btm-next]');
+  const rotate = wheel.querySelector('[data-btm-rotate]');
+  const status = wheel.querySelector('[data-btm-status]');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const dialog = root.querySelector('[data-btm-dialog]');
+  const nativeDialog = dialog ? typeof dialog.showModal === 'function' : false;
+  const inlinePlayback = /^https?:$/.test(window.location.protocol) ? nativeDialog : false;
+  const player = root.querySelector('[data-btm-player]');
+  const dialogTitle = root.querySelector('[data-btm-dialog-title]');
+  const youtubeLink = root.querySelector('[data-btm-youtube-link]');
+
+  let timer = null;
+  let hovered = false;
+  let focused = false;
+  let returnFocus = null;
+
+  function updateStatus() {
+    const start = Math.max(0, Math.round(rail.scrollLeft / Math.max(1, cards[0].offsetWidth + 20)));
+    const visible = Math.max(1, Math.round(rail.clientWidth / Math.max(1, cards[0].offsetWidth + 20)));
+    const end = Math.min(cards.length, start + visible);
+    status.textContent = 'Showing videos ' + (start + 1) + '–' + end + ' of ' + cards.length;
+  }
+
+  function move(direction) {
+    const maximum = Math.max(0, rail.scrollWidth - rail.clientWidth);
+    const step = cards[0].offsetWidth + 20;
+    let left;
+
+    if (direction > 0) {
+      left = rail.scrollLeft >= maximum - 4 ? 0 : Math.min(maximum, rail.scrollLeft + step);
+    } else {
+      left = rail.scrollLeft <= 4 ? maximum : Math.max(0, rail.scrollLeft - step);
+    }
+
+    rail.scrollTo({
+      left:left,
+      behavior:reducedMotion.matches ? 'auto' : 'smooth'
+    });
+  }
+
+  function setRotation(enabled) {
+    if (timer !== null) {
+      window.clearInterval(timer);
+      timer = null;
+    }
+
+    const active = enabled ? !reducedMotion.matches : false;
+    rotate.setAttribute('aria-pressed', String(active));
+    rotate.textContent = active ? 'Pause rotation' : 'Start rotation';
+    status.setAttribute('aria-live', active ? 'off' : 'polite');
+
+    if (active) {
+      timer = window.setInterval(function () {
+        if (hovered || document.hidden) return;
+        if (focused) {
+          if (document.activeElement !== rotate) return;
+        }
+        if (dialog) {
+          if (dialog.open) return;
+        }
+        move(1);
+      }, 6500);
+    }
+  }
+
+  previous.hidden = false;
+  next.hidden = false;
+  rotate.hidden = reducedMotion.matches;
+
+  previous.addEventListener('click', function () {
+    move(-1);
+  });
+
+  next.addEventListener('click', function () {
+    move(1);
+  });
+
+  rotate.addEventListener('click', function () {
+    setRotation(timer === null);
+  });
+
+  wheel.addEventListener('mouseenter', function () {
+    hovered = true;
+  });
+
+  wheel.addEventListener('mouseleave', function () {
+    hovered = false;
+  });
+
+  wheel.addEventListener('focusin', function () {
+    focused = true;
+  });
+
+  wheel.addEventListener('focusout', function (event) {
+    focused = wheel.contains(event.relatedTarget);
+  });
+
+  rail.addEventListener('scroll', updateStatus, {passive:true});
+
+  rail.addEventListener('keydown', function (event) {
+    if (event.target !== rail) return;
+
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault();
+      move(event.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+
+  window.addEventListener('resize', updateStatus);
+
+  reducedMotion.addEventListener('change', function () {
+    setRotation(false);
+    rotate.hidden = reducedMotion.matches;
+  });
+
+  updateStatus();
+
+  function closeVideo() {
+    if (!dialog) return;
+    if (dialog.open) dialog.close();
+  }
+
+  if (nativeDialog) {
+    root.querySelector('[data-btm-close]').addEventListener('click', closeVideo);
+
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) closeVideo();
+    });
+
+    dialog.addEventListener('close', function () {
+      player.replaceChildren();
+
+      if (returnFocus) {
+        if (document.contains(returnFocus)) returnFocus.focus();
+      }
+
+      returnFocus = null;
+    });
+  }
+
+  rail.querySelectorAll('a[data-btm-video]').forEach(function (link) {
+
+    if (inlinePlayback) {
+      link.setAttribute('aria-label', 'Play ' + link.dataset.btmTitle);
+      link.querySelector('[data-btm-video-action]').textContent = 'Play video';
+    }
+
+    link.addEventListener('click', function (event) {
+      setRotation(false);
+
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (!inlinePlayback) return;
+
+      const id = link.dataset.btmVideo;
+      if (!/^[a-zA-Z0-9_-]{11}$/.test(id)) return;
+
+      event.preventDefault();
+
+      returnFocus = link;
+      dialogTitle.textContent = link.dataset.btmTitle;
+      youtubeLink.href = link.href;
+
+      const iframe = document.createElement('iframe');
+
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?' + new URLSearchParams({
+        autoplay:'1',
+        playsinline:'1',
+        rel:'0'
+      }).toString();
+
+      iframe.title = link.dataset.btmTitle;
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+
+      player.replaceChildren(iframe);
+      dialog.showModal();
+    });
+
+  });
+
+})();
+</script>
+<!-- /wp:html -->
